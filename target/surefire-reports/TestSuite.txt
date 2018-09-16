@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 83.318 sec <<< FAILURE!
+doLogin(com.qtpselenium.facebook.pom.testcases.LoginTest)  Time elapsed: 41.438 sec  <<< FAILURE!
+java.lang.AssertionError: Could not login
+	at org.testng.Assert.fail(Assert.java:93)
+	at com.qtpselenium.facebook.pom.base.BaseTest.reportFailure(BaseTest.java:68)
+	at com.qtpselenium.facebook.pom.testcases.LoginTest.doLogin(LoginTest.java:56)
+
