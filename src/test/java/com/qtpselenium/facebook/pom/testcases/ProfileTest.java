@@ -40,7 +40,7 @@ public class ProfileTest extends BaseTest {
 		PageFactory.initElements(driver, launchpage);
 		LoginPage loginPage=launchpage.gotoLoginPage();
 		loginPage.verifyTitle("Facebook login");
-		Object page=loginPage.doLogin("friendlyananth15@gmail.com","venkipriya");
+		Object page=loginPage.doLogin("friendlyananth15@gmail.com","");
 		
 		if(page instanceof LoginPage){
 			Assert.fail("Login failed");
