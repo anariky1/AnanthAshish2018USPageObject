@@ -45,7 +45,7 @@ public class SendMail
                 //This is for yahoo
 
                 sendMail("ananthkumarbabu_eee83@yahoo.co.in",
-                		            "venkipriya",
+                		            "",
                 		            "smtp.mail.yahoo.com",
                 		            "25",
                 		            "true",
