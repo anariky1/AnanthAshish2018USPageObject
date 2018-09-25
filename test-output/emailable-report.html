@@ -8,22 +8,55 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite1</th></tr>
-<tr><td><a href="#t0">Login Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">57,369</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Profile Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">28,814</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Change Password Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">21,682</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num attn">1</th><th class="num">107,865</th><th colspan="2"></th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">56,716</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.facebook.pom.testcases.LoginTest</td><td><a href="#m0">doLogin</a></td><td rowspan="1">1536518682245</td><td rowspan="1">31435</td></tr><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qtpselenium.facebook.pom.testcases.LoginTest</td><td><a href="#m1">doLogin</a></td><td rowspan="1">1536518656959</td><td rowspan="1">21030</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Profile Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qtpselenium.facebook.pom.testcases.ProfileTest</td><td><a href="#m2">testProfile</a></td><td rowspan="1">1536518714324</td><td rowspan="1">22772</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Change Password Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qtpselenium.facebook.pom.testcases.ChangePasswordTest</td><td><a href="#m3">changePasswordTest</a></td><td rowspan="1">1536518743143</td><td rowspan="1">21047</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.facebook.pom.testcases.SendMessageTest</td><td><a href="#m0">sendMessageTest</a></td><td rowspan="1">1537854763857</td><td rowspan="1">55897</td></tr></tbody>
 </table>
-<h2>Login Test</h2><h3 id="m0">com.qtpselenium.facebook.pom.testcases.LoginTest#doLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=friendlyananth15@gmail.com, ExpectedResult=Success, RunMode=Y, Password=xxxx, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Could not login
-	at com.qtpselenium.facebook.pom.base.BaseTest.reportFailure(BaseTest.java:96)
-	at com.qtpselenium.facebook.pom.testcases.LoginTest.doLogin(LoginTest.java:59)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qtpselenium.facebook.pom.testcases.LoginTest#doLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=friendlyananth15@gmail.com, ExpectedResult=Success, RunMode=Y, Password=venkipriya, Browser=Mozilla}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Profile Test</h2><h3 id="m2">com.qtpselenium.facebook.pom.testcases.ProfileTest#testProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Change Password Test</h2><h3 id="m3">com.qtpselenium.facebook.pom.testcases.ChangePasswordTest#changePasswordTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=Handgreat99, Username=friendlyananth15@gmail.com, OldPassword=venkipriya, ExpectedResult=Success, RunMode=Y, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.qtpselenium.facebook.pom.testcases.SendMessageTest#sendMessageTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=friendlyananth15@gmail.com, ExpectedResult=Success, RunMode=Y, ChatFriend=Padma Priya, Password=Handgreat99, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@aria-autocomplete and @role=&apos;combobox1&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.qtpselenium.facebook.pom.base.BasePage.explicitWait(BasePage.java:96)
+	at com.qtpselenium.facebook.pom.pages.session.LandingPage.sendChatMessage(LandingPage.java:67)
+	at com.qtpselenium.facebook.pom.testcases.SendMessageTest.sendMessageTest(SendMessageTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@aria-autocomplete and @role=&apos;combobox1&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;HP-PC&apos;, ip: &apos;192.168.0.10&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

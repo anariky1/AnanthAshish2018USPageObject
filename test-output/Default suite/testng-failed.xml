@@ -3,13 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qtpselenium.facebook.pom.testcases.LoginTest">
+      <class name="com.qtpselenium.facebook.pom.testcases.SendMessageTest">
         <methods>
+          <include name="sendMessageTest" invocation-numbers="0"/>
           <include name="quit"/>
-          <include name="sendemail"/>
-          <include name="doLogin" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.qtpselenium.facebook.pom.testcases.LoginTest -->
+      </class> <!-- com.qtpselenium.facebook.pom.testcases.SendMessageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

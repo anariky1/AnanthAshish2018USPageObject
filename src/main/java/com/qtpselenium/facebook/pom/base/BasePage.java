@@ -5,6 +5,7 @@ package com.qtpselenium.facebook.pom.base;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -12,6 +13,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.qtpselenium.facebook.pom.common.TopMenu;
@@ -24,6 +27,7 @@ public class BasePage {
 	public WebDriver driver;
 	public ExtentTest test;
 	public TopMenu menu;
+	public WebDriverWait wait;
 
 	public BasePage(){}
 	
@@ -81,5 +85,17 @@ public class BasePage {
 		test.log(LogStatus.FAIL, "Failing the test");
 		Assert.fail(failureMessage);
 	}
+	
+	public void waitUntilElementPresent(int time){
+		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+		
+	}
+	
+	public void explicitWait(String xpath , int timeUnit){
+		wait = new WebDriverWait(driver,timeUnit);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath))).isDisplayed();
+	}
 
 }
+
+
